@@ -1,0 +1,26 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-poppins: "Poppins", sans-serif;
+  
+  --color-primary: #FFC0CB;
+  --color-secondary: #FFE4E1;
+  --color-accent: #FF69B4;
+  --color-bg-soft: #f8f5f6;
+}
+
+@layer base {
+  body {
+    @apply bg-bg-soft text-slate-900 font-sans;
+  }
+}
+
+.soft-shadow {
+  box-shadow: 0 4px 20px -2px rgba(255, 192, 203, 0.2);
+}
+
+.pink-gradient {
+  background: linear-gradient(135deg, #FFC0CB 0%, #FF69B4 100%);
+}
